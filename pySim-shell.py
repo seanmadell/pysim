@@ -90,7 +90,7 @@ def init_card(sl):
 
 	# FIXME: do this dynamically
 	rs.mf.add_file(DF_TELECOM())
-	rs.mf.add_file(DF_GSM())
+	rs.mf.add_file(DF_CUSTOM())
 	rs.mf.add_file(DF_EIRENE())
 
 	CardModel.apply_matching_models(scc, rs)

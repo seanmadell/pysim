@@ -87,6 +87,8 @@ if __name__ == '__main__':
 	else:
 		print("ICCID: Can't read, response code = %s" % (sw,))
 
+	card.select_aid()
+
 	# EF.IMSI
 	(res, sw) = card.read_imsi()
 	if sw == '9000':

@@ -103,6 +103,7 @@ class LinkBase(abc.ABC):
 				data : string (in hex) of returned data (ex. "074F4EFFFF")
 				sw   : string (in hex) of status word (ex. "9000")
 		"""
+		print(pdu)
 		data, sw = self.send_apdu_raw(pdu)
 
 		# When whe have sent the first APDU, the SW may indicate that there are response bytes
